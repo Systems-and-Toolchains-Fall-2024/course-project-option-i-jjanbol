@@ -149,7 +149,7 @@ As for Linear regression, there is a possibility that the data points have linea
 
 For Linear Reg: Since it is simpler model, ADAM was also chosen due to similar reasons with MLP. Similar range of learning rate as well as batch size was tested using hyperparameter grid. 
 
-Overall, MLP resulted R2 ≥ 0.9 which means it is capturing 90% of the variance of the testing data which is a good result. The linear reg had R2 ≥ 0.8 which is also decent. When compared to Random Forest regressor which is also in similar range of performance, it is preferred to use in general, Random Forest Regressor, considering the amount of code that needs to be written, hypertuning complexity, and computational cost which is quite high with MLP. 
+Overall, MLP resulted R2 ≥ 0.9 which means it is capturing at least 90% of the variance of the testing data which is a good result. The linear reg had R2 ≥ 0.8 which is also decent. When compared to Random Forest regressor which is also in similar range of performance, it is preferred to use in general, Random Forest Regressor, considering the amount of code that needs to be written, hypertuning complexity, and computational cost which is quite high with MLP. 
 
 
 
