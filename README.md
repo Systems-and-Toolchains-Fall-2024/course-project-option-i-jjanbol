@@ -138,7 +138,20 @@ Finally, since FIFA data does not require terabytes of storage or deal with mass
 # In your ReadMe file, explain why you chose the classifiers/regressors and
 # provide comments on the impact of the tunable parameters on the accuracy. Also, compare the selected models.
 
+FOR PYTORCH:
+We have decided to run MultiLayer Perceptron and Linear regression for PyTorch. 
 
+MultiLayer Perceptron was chosen because fifa dataset is quite complex and has many different features that is relevant to the abilities of the football player. Multilayered approach should be able to learn all the nuance, relationship, and complexities in estimating the Overall rating of a player. It is also likely that these features and target have non-linear relationship, requiring non-linear models such as MLP. This type of model also has great flexibility when it comes to hypertuning. Selection of number of layers to activation function gives the coder much more option than Linear regression model. 
+
+For MLP: With shallow layer depth, the R2 and Loss were quite high, indicating that model is not learning well from the data. After adding about 5-6 layers, the model significantly performed better, with each epoch progressively increasin the R2 and decreasing the loss. Dropout of neurons was experimented on the data. However, it hasn't improved the performance on the validation set that much. Hence dropout was not implemented. 
+
+When it comes to Learning rate and Batch size, different values were tried. In the code hyperparameter grid was built to try different values. In general, when lr = 0.1 or higher, model was overshooting and was not stabilizing. Also with SGD, model convergence was very difficult. Thus ADAM was chosen which can introduce much more smoother descent toward local minima than SGD. With lr greater than 0.1, and ADAM as optimizer, convergence became stable and model was learning with decent speed. 
+
+As for Linear regression, there is a possibility that the data points have linear relationship with the target (Overall Rating). If this is the case, we would be able to get a decent Regression model that can predict the Overall rating with decent Loss and R^2 with less computation cost. Linear regression model is foundational yet widely used and can be way cheaper computationally than MLP as it doesn't train multiple layers of functions and perform backpropogation. Linear regression can also have less tendency to overfit when compared to MLP. With many deep layers, MLP is likely to overfit the data. This model is also simple, in that it has fewer parameters to tune and can be setup and run much faster than MLP can. 
+
+For Linear Reg: Since it is simpler model, ADAM was also chosen due to similar reasons with MLP. Similar range of learning rate as well as batch size was tested using hyperparameter grid. 
+
+Overall, MLP resulted R2 ≥ 0.9 which means it is capturing 90% of the variance of the testing data which is a good result. The linear reg had R2 ≥ 0.8 which is also decent. When compared to Random Forest regressor which is also in similar range of performance, it is preferred to use in general, Random Forest Regressor, considering the amount of code that needs to be written, hypertuning complexity, and computational cost which is quite high with MLP. 
 
 
 
