@@ -4,6 +4,14 @@
 
 # Demo and Code explanaiton Video: https://cmu.box.com/s/c91egc2sgmf2cnxjeq3dx46b7iyq1a39
 
+#Guide to running the code
+1. Open the Project.ipynb
+2. FOR TASK 1: Run the Cells from the top. EXCEPT: the 7th cell that has `# WRITING THE DATAFRAME TO GOOGLE CLOUD SQL`  as commented in the beginning. Please do NOT run this, otherwise the Postgres on CloudSQL will get duplicate data.
+3. For TASK 2
+4. For TASK 3 - PyTorch for Both MLP and Linear Reg, you can run all the code cells one by one from top to bottom. Every cell should be run in order and sequentially.
+5. FOR TASK 3 - SPARK ML
+
+
 # Task - I
 Description of the features in the dataset.
 
