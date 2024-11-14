@@ -9,7 +9,7 @@
 2. FOR TASK 1: Run the Cells from the top. EXCEPT: the 7th cell that has `# WRITING THE DATAFRAME TO GOOGLE CLOUD SQL`  as commented in the beginning. Please do NOT run this, otherwise the Postgres on CloudSQL will get duplicate data.
 3. For TASK 2
 4. For TASK 3 - PyTorch for Both MLP and Linear Reg, you can run all the code cells one by one from top to bottom. Every cell should be run in order and sequentially.
-5. FOR TASK 3 - SPARK ML
+5. FOR TASK 3 - SPARK ML for both the Linear and Random Forest Regressors, you can run the code cells one by one from top to bottom, it should be run in the order it is currently in.
 
 
 # Task - I
