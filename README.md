@@ -134,8 +134,7 @@ In contrast, NoSQL databases excel with unstructured or semi-structured data. Ho
 
 Finally, since FIFA data does not require terabytes of storage or deal with massive-scale operations, the scalability benefits of NoSQL are unnecessary. PostgreSQL, with its support for structured and relational data, is the better solution in this case.
 
-# In your ReadMe file, explain why you chose the classifiers/regressors and
-# provide comments on the impact of the tunable parameters on the accuracy. Also, compare the selected models.
+# In your ReadMe file, explain why you chose the classifiers/regressors and provide comments on the impact of the tunable parameters on the accuracy. Also, compare the selected models.
 
 FOR PYTORCH:
 We have decided to run MultiLayer Perceptron and Linear regression for PyTorch. 
