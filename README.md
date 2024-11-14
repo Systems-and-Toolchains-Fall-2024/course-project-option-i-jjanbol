@@ -2,7 +2,7 @@
 
 # Cloud Jupyter Notebook Video: https://cmu.box.com/s/h74d5b2ro4canlbu11da3g8cra1ja07k
 
-# Demo and Code explanaiton Video: 
+# Demo and Code explanaiton Video: https://cmu.box.com/s/c91egc2sgmf2cnxjeq3dx46b7iyq1a39
 
 # Task - I
 Description of the features in the dataset.
