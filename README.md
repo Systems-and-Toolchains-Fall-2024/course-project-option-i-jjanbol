@@ -1,3 +1,15 @@
+Overall Results:
+
+
+| Model                      | MSE Train Loss       | MSE Validate Loss    | RMSE               | R² Validation           |
+|----------------------------|----------------------|----------------------|--------------------|-------------------------|
+| Neural Network             | 2.3266937732696533   | 1.82378351688385     | -                  | 0.9637167118489742      |
+| Linear Regression          | 8.578754425048828    | 8.450727462768555    | -                  | 0.8313521295785904      |
+| Random Forest Regressor    | -                    | -                    | 1.688401873744203  | -                       |
+
+
+
+
 # Project partner: Madhav Karthikeyakannan
 
 # Cloud Jupyter Notebook Video: https://cmu.box.com/s/h74d5b2ro4canlbu11da3g8cra1ja07k
